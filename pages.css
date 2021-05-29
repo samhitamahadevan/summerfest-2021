@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("background.jpg");
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+ul li{
+    display: inline-block;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+}
+ul li a:hover {
+    background-color: white;
+    color:black;
+}
+
+ul li.active a {
+    background-color: white;
+    color:black;
+
+}
+@font-face {
+    font-family:"Lena";
+    src: url("Lena.ttf") format("truetype");
+  }
+.logo img{
+    float: left;
+    width: 150px;
+    height:auto;
+    transform: rotate(340deg);
+    margin-left: 15px;
+    margin-top: 10px;
+    transition-property: width;
+    transition-duration: .5s;
+}
+      
+.logo img:hover{
+        width:200px;
+      }
+
+
+#h11{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: "Lena";
+    text-shadow: 2px 2px black;
+    font-weight: lighter;
+}
+
+.main{
+    max-width:1444px;
+    margin: auto;
+
+}
+
+.title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    align-items: center;
+    transform: translate(-50%,-50%);
+
+}
+
+.button{
+    position: absolute;
+    top: 77%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+
+}
+
+.heading{
+    font-family: "Lena"; 
+    color: white; 
+    font-size: 52px; 
+    text-align: center;
+}
+
+.btn2{
+    border: 2px solid white;
+    padding: 10px 25px;
+    color:black;
+    text-decoration:none;
+    max-width: 200px;
+    margin: auto;
+    transition: 0.5s ease;
+}
+
+.btn3{
+    border: 2px solid white;
+    padding: 10px 45px;
+    color:black;
+    text-decoration:none;
+    max-width: 200px;
+    margin: auto;
+    transition: 0.5s ease;
+}
+
+.h44{
+    margin-top: 10%;
+    color: black;
+    font-size: 20px;
+    font-family: "Verdana";
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.description{
+    position: absolute;
+    top: 64%;
+    left: 64%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    
+    margin-right: 28%;
+}
+
+.gtn{
+    border: 2px solid white;
+    padding: 50px 30px;
+    color:white;
+    text-decoration:none;
+    margin: auto;
+    transition: 0.5s ease;
+    font-family:"Verdana";
+    font-weight: lighter; 
+    height: 296px;
+    font-size: 20px;
+    text-align: justify;
+}
