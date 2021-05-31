@@ -17,7 +17,7 @@
                 </div> 
 				
                 <div class="name-wrapper">
-                    <label id="h13">  Event Name: &nbsp;  </label> 
+                    <label id="h13">  User Name: &nbsp;  </label> 
                     <input type="text" name="name" placeholder="Users Email here"/> 
                 </div> 
                 

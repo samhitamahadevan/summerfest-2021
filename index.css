@@ -53,7 +53,7 @@ ul li.active a {
   transition-property: width;
   transition-duration: 0.5s;
 }
-
+ 
 .logo img:hover {
   width: 200px;
 }
@@ -216,26 +216,32 @@ label {
   padding: 30px;
 }
 
-.form-wrapper {
+.form-wrapper{
   display: inline-block;
-
+ 
   text-align: right;
+
+
 }
 
-#h1 {
+#h1{
   text-decoration: none;
   text-align: center;
   color: azure;
+
+
 }
 
-.userprof {
+
+.userprof{
   position: absolute;
   top: 63%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.navb {
+
+.navb{
   text-decoration: none;
   color: aliceblue;
   padding: 5px 20px;
@@ -251,6 +257,7 @@ label {
   max-width: 200px;
   margin: auto;
   transition: 0.5s ease;
+
 }
 .button1 {
   position: absolute;
@@ -259,12 +266,13 @@ label {
   transform: translate(-50%, -50%);
 }
 
+
 .eventimg1 {
   width: 110px;
   height: 110px;
   margin: 10px;
   border-style: solid;
-  border-color: white;
+  border-color:white;
   transition-property: width;
   transition-duration: 0.5s;
 }
@@ -273,7 +281,7 @@ label {
   height: 110px;
   margin: 10px;
   border-style: solid;
-  border-color: white;
+  border-color:white;
   transition-property: width;
   transition-property: height;
   transition-duration: 0.5s;
@@ -294,10 +302,10 @@ label {
   font-family: "Lena";
 }
 
-.heading {
-  font-family: "Lena";
-  color: white;
-  font-size: 52px;
+.heading{
+  font-family: "Lena"; 
+  color: white; 
+  font-size: 52px; 
   text-align: center;
 }
 
@@ -307,33 +315,34 @@ label {
   left: 50%;
   align-items: center;
 }
-.h44 {
+.h44{
   margin-top: 10%;
   color: white;
   font-size: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: lighter;
+ 
 }
 
-.gtn {
+.gtn{
   border: 2px solid white;
   padding: 100px 30px;
-  color: white;
-  text-decoration: none;
+  color:white;
+  text-decoration:none;
   margin: auto;
   transition: 0.5s ease;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: lighter;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter; 
   height: 296px;
   font-size: 20px;
   text-align: justify;
 }
 
-.description {
+.description{
   position: absolute;
   top: 64%;
   left: 70%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   width: 600px;
   margin-right: 28%;
 }
@@ -352,22 +361,34 @@ label {
   font-family: "Lena";
   color: white;
   display: inline;
+
+
 }
-.body {
-  display: flex;
+.body{
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0;
   overflow: hidden;
-  background-color: black;
+  background: transparent;  
   top: -30%;
 }
 
+
+
+
+
 .countdown {
-  display: flex;
+  display:flex;
   transform: scale(2);
   color: aliceblue;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  
+
 }
 
 .time {
@@ -386,21 +407,25 @@ label {
   transform: translate(-50%, -50%);
 }
 
+
 .imgcart {
-  width: 100%;
-  height: 100%;
-  display: block;
+  width:100%;
+  height:100%;
+  display:block;
+
 }
+
 
 .cards {
   margin: 0 auto;
-
+  
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
   gap: 20px;
   padding-top: 30px;
   padding-left: 20px;
+
 }
 
 .cards * {
@@ -410,9 +435,10 @@ label {
 .card__image {
   width: 100px;
   display: block;
+ 
 }
 
-.card {
+.card{
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -421,9 +447,7 @@ label {
   line-height: 1.5;
   font-size: 0.9em;
   padding: 15px;
-  /* background: #fafafa; */
-  border-right: 2px solid #ffffff;
-  border-left: 2px solid #ffffff;
+  
 }
 
 .card__content > p:first-of-type {
@@ -434,18 +458,7 @@ label {
   margin-bottom: 0;
 }
 
-.card__info {
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #555555;
-  background: #eeeeee;
-  font-size: 0.8em;
-  border-bottom: 2px solid #333333;
-  border-right: 2px solid #333333;
-  border-left: 2px solid #333333;
-}
+
 
 .pcart {
   text-align: center;
@@ -453,7 +466,8 @@ label {
   font-family: "Lena";
 }
 
-/* cart stuff!  */
+
+
 
 .cartbox {
   width: 80%;
@@ -509,4 +523,21 @@ h3 {
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
+}
+
+.description2{
+  position: absolute;
+  top: 55% !important;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 450px;
+  border: 2px solid white;
+  padding: 60px 40px;
+  color:white;
+  text-decoration:none;
+  margin: auto;
+  transition: 0.5s ease;
+  font-family:"Lena";
+  font-weight: lighter; 
+  height: 300px;
 }

@@ -29,54 +29,66 @@
     $titletwo = $eventrow2['event_title']; 
     $titlethree = $eventrow3['event_title']; 
 
-    if($titlethree == false) {
-      $titlethree= 'Add an event!'; 
+
+    $priceone = $eventrow1['event_price']; 
+    $pricetwo = $eventrow2['event_price']; 
+    $pricethree = $eventrow3['event_price'];
+
+
+
+    if($titleone == false) {
+      $titleone= 'Add an event!'; 
+      $priceone=0;
     }
 
-    if($titlethree == false) {
-      $titlethree= 'Add an event!'; 
+    if($titletwo == false) {
+      $titletwo= 'Add an event!'; 
+      $pricetwo=0;
     }
 
     if($titlethree == false) {
         $titlethree= 'Add an event!'; 
+        $pricethree=0;
     }
 
+    $pricetotal= $priceone +$pricetwo + $pricethree;
+    $_SESSION['pricetotal'] = $pricetotal;
+	$_SESSION ['titleone'] = $titleone;
+	$_SESSION ['titletwo'] = $titletwo;
+	$_SESSION ['titlethree'] = $titlethree;
+	$_SESSION ['priceone'] = $priceone;
+	$_SESSION ['pricetwo'] = $pricetwo;
+	$_SESSION ['pricethree'] = $pricethree;
+	$_SESSION['userid']= $userid;
+	$_SESSION['email']= $email;
 
 
 
 
 echo"<section class='cartbox'> 
-
             <div class='row'>
-
                 <div class='col'>
-
                     <img src='cartimg.jpg'/>'"; 
 echo"<h3 style='font-size: 40px;'>" . $titleone . "</h3>"; 
                     
 
 echo"              </div>
-
                 <div class='col'>
-
                     <img src='cartimg.jpg'/>";
 echo"<h3 style='font-size: 40px;'>". $titletwo . "</h3>"; 
                     
 
 echo"               </div>
-
                 <div class='col'>
-
                     <img src='cartimg.jpg'/>";
 echo"<h3 style='font-size: 40px;'>" . $titlethree .  "</h3>"; 
                     
 
 echo"                </div>
-
             </div>
-
+            <a href='#' class='btn'> TOTAL AMOUNT: " . $pricetotal . "</a>
             <a href='payment.php' class='btn'> PROCEED TO PAY </a>
-
+            
     </section> "; 
 
 
@@ -93,84 +105,3 @@ echo"                </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-<div class="cards" style="transform: translate(0%, -110%); top:30% left:50%">
-  <div class="card">
-    <img class="card__img" src="cartimg.jpg" alt="Card Image" style="width:70%; display: block; margin-left: auto; margin-right: auto; border-style: solid;
-  border-color:white;">
-
-        <div class="card__content">
-            <p class="pcart" style="color:white; text-align:center; "> EVENT 1</p>
-            <a href="events.php"  class="btn" style="color:white; display: block; margin-left: auto; margin-right: auto; text-align: center;">ADD TO CART </a>
-        </div>
-    </div>
-
-
-
-  <div class="card">
-    <img class="card__img" src="cartimg.jpg" alt="Card Image" style="width:70%; display: block; margin-left: auto; margin-right: auto; border-style: solid;
-  border-color:white; ">
-        <div class="card__content">
-            <p class="pcart" style="color:white; text-align:center; "> EVENT 2</p>
-            <a href="events.php"  class="btn" style="color:white; display: block; margin-left: auto; margin-right: auto; text-align: center;">ADD TO CART </a>
-            
-        </div>
-    </div>
-
-
-
-  <div class="card">
-    <img class="card__img" src="cartimg.jpg" alt="Card Image" style="width:70%; display: block; margin-left: auto; margin-right: auto; border-style: solid;
-  border-color:white;">
-        <div class="card__content">
-            <p class="pcart" style="color:white; text-align:center; "> EVENT 3 </p>
-            <a href="events.php"  class="btn" style="color:white; display: block; margin-left: auto; margin-right: auto; text-align: center;">ADD TO CART </a>
-         
-        </div>
-    </div>
-</div>
-<div  style="position:relative; left:620px; top: -475px;">
-    <a href="payment.php" class="btn">PROCEED TO PAYMENTS </a>
-</div>
-
-        
-       
-        
-        
-            
-
-
-<?php
-    include_once'footer.php';
-?> -->

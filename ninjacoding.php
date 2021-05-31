@@ -3,7 +3,7 @@
 ?>
 
 <div>
-<img src= "ninjacoding.png" height="400px" width="400px" style="position:absolute; left:5%; top:35%; border-style: solid;
+<img src= "ninjacoding.png" height="495px" width="495px" style="position:absolute; left:10%; top:30%; border-style: solid;
   border-color:white;" >
 </div>
             <div class="description" style="float: right;">

@@ -3,7 +3,7 @@
 ?>
 
 <div>
-<img src= "fandomquiz.png" height="400px" width="400px" style="position:absolute; left:5%; top:35%; border-style: solid;
+<img src= "fandomquiz.png" height="495px" width="495px" style="position:absolute; left:10%; top:30%; border-style: solid;
   border-color:white;" >
 </div>
             <div class="description" style="float: right;">
@@ -13,7 +13,7 @@
  
                      <ol>
                     <li >Sign up as individuals or teams upto 3</li>
-                    <li > The event goes on from 4pm to 6pm</li>
+                    <li >The event goes on from 4pm to 6pm</li>
                     <li>Direct answers get 10 points</li>
                     <li> Passed answers get 5 points</li>
                     </ol>

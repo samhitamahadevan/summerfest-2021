@@ -2,7 +2,7 @@
     include_once'header.php';
 ?>
 <div class="body">
-  <div class="countdown" id="countdown">
+  <div class="countdown" id="countdown" style ="position:absolute; top:27%; left:50%; transform: translate(-50%, -50%); font-size: 2.5rem;">
     <div class="time">
       <h2 id="days">00</h2>
       <small> Days </small>
@@ -22,7 +22,7 @@
   </div>
 </div>
 <script>
-    var countDownDate = new Date("Jun 25, 2021 16:37:52").getTime();
+    var countDownDate = new Date("Jun 4, 2021 16:37:52").getTime();
 
 // Run myfunc every second
 var myfunc = setInterval(function() {

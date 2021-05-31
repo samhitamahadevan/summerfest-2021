@@ -1,8 +1,8 @@
 <?php
-    include_once'header.php';
+    include_once'volheader.php';
 ?>
-<div class="title">
-            <h1 id="h11" > WELCOME TO SUMMERFEST 2021 </h1>
+<div class="title2">
+            <h1 id="h11" > REGISTERED USERS</h1>
 </div>
 
 <div class="button">
@@ -14,9 +14,8 @@ if (mysqli_connect_errno())
 {
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-$userid= $_SESSION["userid"];
 
-$result = mysqli_query($con,"SELECT * FROM users where usersId='$userid'");
+$result = mysqli_query($con,"SELECT * FROM users");
 
 echo "<table border='2' style='color:white;' >
 <tr>
@@ -26,8 +25,6 @@ echo "<table border='2' style='color:white;' >
 <th style='color: white; width:300x;  height:15%;' >Role</th>
 <th style='color: white; width:300px; height:15%;' >College</th>
 <th style='color: white; width:300px; height:15%;' >Branch</th>
-
-
 </tr>";
 
 while($row = mysqli_fetch_array($result))
@@ -42,6 +39,7 @@ echo "<td style='color: white; width:300px; height:15%;'>" . $row['usersBranch']
 echo "</tr>";
 }
 echo "</table>";
+
 
 mysqli_close($con);
 ?>
